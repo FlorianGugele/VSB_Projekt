@@ -2,7 +2,7 @@ import './App.css'
 
 function App() {
   return (
-    <div className='bg-gray-400'>
+    <div className='bg-gray-400 p-5'>
       <div className='bg-red-300'>Test</div>
     </div>
   )
