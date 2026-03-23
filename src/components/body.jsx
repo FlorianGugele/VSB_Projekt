@@ -1,7 +1,7 @@
 import { useState } from "react";
 import dropdown from "../assets/dropdown.jpg";
 
-export default function Body() {
+export default function Body({ onAnmelden }) {
     const [open, setOpen] = useState(false);
 
     return (
@@ -25,8 +25,10 @@ export default function Body() {
                 <div className="bg-gray-300 px-5 py-4 flex justify-between h-[7vh]">
                     <p className="text-xl">18:00</p>
                     <p className="text-xl">noch 18 Stände frei</p>
-                    <div className="bg-red-400 pl-[2vw] pr-[2vw] font-bold">
-                        <p className="text-lg p-1">Anmelden</p>
+                    <div className="bg-red-400 pl-[2vw] pr-[2vw] font-bold cursor-pointer transition transform duration-200 ease-in-out hover:scale-105 hover:bg-red-500" onClick={onAnmelden}>
+                        <button className="mt-[0.5vh]  ">
+                            Anmelden
+                        </button>
                     </div>
                 </div>
             </div>
