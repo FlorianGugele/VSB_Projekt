@@ -1,11 +1,16 @@
 import { useState } from "react";
 import dropdown from "../assets/dropdown.jpg";
+const express = require("express");
+const app = express();
+
+app.use(express.json());
+app.use(require("cors")());
 
 export default function Body({ onAnmelden }) {
     const [open, setOpen] = useState(false);
 
     return (
-        <div className=" h-[77vh]">
+        <div className=" h-[77vh] bg-white">
             <div className="mt-[5vh] m-5">
                 <p className="ml-[10vh] text-3xl">Name des Bewerbs</p>
             </div>
