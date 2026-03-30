@@ -13,6 +13,7 @@ export default function Angemeldet({ onLogout }) {
             >
                 Zurück
             </button>
+            <p> dere </p>
         </div>
     );
 }
